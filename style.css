@@ -180,9 +180,14 @@ body{
   background: rgba(255,255,255,0.8);
 }
 
-.appointment{
+.tidycal-embed{
   width: 100%;
-  height: 1150px; /* desktop */
+  min-height: 1150px; /* desktop */
+}
+
+.tidycal-embed iframe{
+  width: 100%;
+  min-height: 1150px;
   border: 0;
 }
 
@@ -237,7 +242,11 @@ body{
     font-size: 30px;
   }
 
-  .appointment{
-    height: 1600px; /* mobile usually needs taller */
+  .tidycal-embed{
+  min-height: 1600px; /* mobile usually needs taller */
+  }
+
+  .tidycal-embed iframe{
+    min-height: 1600px;
   }
 }
